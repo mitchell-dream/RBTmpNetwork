@@ -1,0 +1,7 @@
+platform :ios, '7.0'
+
+target ‘RBNetworkDemo' do
+pod "AFNetworking"
+pod "YYCache"
+pod ‘RBNetwork', :path => '../'
+end
