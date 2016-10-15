@@ -7,8 +7,7 @@
 //
 
 #import "RBNetworkCache.h"
-#import "YYCache.h"
-#import "YYDiskCache.h"
+#import "YYKit.h"
 static NSString *const PDNetworkResponseCache = @"PDNetworkResponseCache";
 static YYCache *_dataCache;
 @implementation RBNetworkCache

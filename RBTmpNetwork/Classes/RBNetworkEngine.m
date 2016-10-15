@@ -112,6 +112,7 @@ OSSpinLockUnlock(&_lock);
         _requestRecordDict = [NSMutableDictionary dictionary];
         _sessionManager = [AFHTTPSessionManager manager];
         _sessionManager.operationQueue.maxConcurrentOperationCount = [RBNetworkConfig defaultConfig].maxConcurrentOperationCount;
+        _sessionManager.responseSerializer.acceptableContentTypes  =  [RBNetworkConfig defaultConfig].acceptableContentTypes;
         _lock = OS_SPINLOCK_INIT;
         _downloadingModels = [[NSMutableArray alloc] initWithCapacity:1];
         _downloadModelsDict = [[NSMutableDictionary alloc] initWithCapacity:1];
